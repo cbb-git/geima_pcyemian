@@ -10,12 +10,19 @@ import 'element-ui/lib/theme-chalk/index.css';
 // 引入图标
 import '@/style/index.less'
 
-import { Button,Input,Form,FormItem,Message} from 'element-ui';
+import { Button,Input,Form,FormItem,Message,container,aside,header,main,menu,submenu,MenuItem} from 'element-ui';
 // 不能写在同个对象里面
 Vue.use(Button)
    .use(Input)
    .use(Form)
    .use(FormItem)
+   .use(container)
+   .use(aside)
+   .use(header)
+   .use(main)
+   .use(menu)
+   .use(submenu)
+   .use(MenuItem)
    .prototype.$message = Message
 
 

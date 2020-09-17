@@ -68,6 +68,8 @@ data () {
         });
         // 登录成功后 我们需要添加token值  需要给后面页面增加限制
         localStorage.setItem('heima_pc',res.data.data.token)
+        // 跳转到主页
+        this.$router.push({path: '/index'})
     }else{
       this.$message({
           message: res.data.message,

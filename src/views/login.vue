@@ -66,6 +66,8 @@ data () {
           message: '登录成功',
           type: 'success'
         });
+        // 登录成功后 我们需要添加token值  需要给后面页面增加限制
+        localStorage.setItem('heima_pc',res.data.data.token)
     }else{
       this.$message({
           message: res.data.message,
